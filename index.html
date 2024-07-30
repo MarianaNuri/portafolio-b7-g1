@@ -51,15 +51,19 @@
 
 
     <main>
-        <section id="presentacion"
-            class="container col-xxl-8 px-4 py-5  d-flex justify-content-start align-items-center">
+        <section id="presentacion">
+<!-- Abri un div y meti la clase (class="container...") que estaba en la seccion (justo a lado del ID="presentacion" en ese div para que la imagen se pusiera en toda la pantalla  -->
+            <div class="container col-xxl-8 px-4 py-5  d-flex justify-content-start align-items-center">
             <div class="row flex-lg-row align-items-center g-5 py-5">
 
                 <div class="col-lg-6 ">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Mariana Chávez
+
+                    <!-- text-body-emphasis en lugar de text-white -->
+
+                    <h1 class="display-5 fw-bold  text-white lh-1 mb-3">Mariana Chávez Nuricumbo
                     </h1>
                     <p class="lead">Soy estudiante de Ingeniería en Sistemas Computacionales y Trabajo Social,
-                        apasionada por la tecnología y el cambio social. Amante de los animales, la música y el dibujo,
+                        apasionada por la tecnología y el cambio social. Amante de los animales, la música (k-pop) y el dibujo,
                         busco fusionar mis conocimientos para crear un impacto positivo en la sociedad.
                     </p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
@@ -69,6 +73,7 @@
                     </div>
                 </div>
             </div>
+         </div> 
         </section>
 
 
@@ -80,7 +85,7 @@
                 <div class="feature col">
                     <!-- Contenedor del icono  -->
                     <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-primary bg-gradient fs-2 mb-3 py-2 px-3 rounded">
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-black bg-gradient fs-2 mb-3 py-2 px-3 rounded">
                         <i class="bi bi-code-square"> </i>
                     </div>
                     <h3 class="fs-2 text-body-emphasis my-2"> Técnicas</h3>
@@ -96,7 +101,7 @@
                 <div class="feature col">
                     <!-- Contenedor del icono  -->
                     <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-primary bg-gradient fs-2 mb-3 py-2 px-3 rounded">
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-black bg-gradient fs-2 mb-3 py-2 px-3 rounded">
                         <i class="bi bi-people"> </i>
                     </div>
                     <h3 class="fs-2 text-body-emphasis my-2">Trabajo Social</h3>
@@ -114,7 +119,7 @@
                 <div class="feature col">
                     <!-- Contenedor del icono  -->
                     <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-primary bg-gradient fs-2 mb-3 py-2 px-3 rounded">
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-black bg-gradient fs-2 mb-3 py-2 px-3 rounded">
                         <i class="bi bi-bookmark-star"> </i>
                     </div>
                     <h3 class="fs-2 text-body-emphasis my-2"> Blandas </h3>
@@ -153,7 +158,7 @@
                                 <li class="me-auto">
 
 
-                                   
+
                                 </li>
                             </ul>
                         </div>
@@ -175,7 +180,7 @@
                                 <li class="me-auto">
 
 
-                                   
+
                                 </li>
                             </ul>
                         </div>
@@ -191,13 +196,15 @@
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Trabajo Social.</h3>
 
-                            <a class="url" href="https://www.facebook.com/photo/?fbid=960354486091463&set=pcb.960354526091459&locale=es_LA" target="_blank">URL</a> 
+                            <a class="url"
+                                href="https://www.facebook.com/photo/?fbid=960354486091463&set=pcb.960354526091459&locale=es_LA"
+                                target="_blank">URL</a>
 
                             <ul class="d-flex list-unstyled mt-auto">
                                 <li class="me-auto">
 
 
-                                   
+
                                 </li>
                             </ul>
                         </div>
@@ -205,61 +212,77 @@
                 </div>
 
 
-                
+
             </div>
         </section>
 
-        <section id="testimonos">
-            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                        aria-label="Slide 1" aria-current="true"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
-                        class=""></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
-                        class=""></button>
-                </div>
+        <section id="testimonios">
+            <div id="myCarousel" class="carousel slide mb-6 carousel-dark carousel-fade " data-bs-theme="dark"
+                data-bs-ride="carousel">
+
                 <div class="carousel-inner">
+
                     <div class="carousel-item active">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                        </svg>
-                        <div class="container">
-                            <div class="carousel-caption text-start">
-                                <h1>Example headline.</h1>
-                                <p class="opacity-75">Some representative placeholder content for the first slide of the
-                                    carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                            </div>
-                        </div>
+
+                        <article class="container text-center">
+                            <img class="rounded-5" height="250" src="assets/bangchan.jpeg" alt="persona1">
+                            <h3 class="my-3">Bangchan</h3>
+                            <p> "Puedo decir con confianza que es una persona increíblemente dedicada y multifacética."</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        </article>
                     </div>
+
                     <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                        </svg>
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h1>Another example headline.</h1>
-                                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                            </div>
-                        </div>
+
+                        <article class="container text-center">
+                            <img class="rounded-5" height="250" src="assets/mamá.jpeg" alt="persona2">
+                            <h3 class="my-3">Diana Nuricumbo </h3>
+                            <p> "Una persona dedicada con lo que hace; ha demostrado ser una persona solidaria y comprensiva, apoyando a sus amigos en momentos importantes."</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        </article>
                     </div>
+
                     <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                        </svg>
-                        <div class="container">
-                            <div class="carousel-caption text-end">
-                                <h1>One more for good measure.</h1>
-                                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                            </div>
-                        </div>
+
+                        <article class="container text-center">
+                            <img class="rounded-5" height="250" src="assets/linces.jpeg" alt="persona3">
+                            <h3 class="my-3">Amigas</h3>
+                            <p> "Mariana es una persona excepcional, con una gran capacidad de aprendizaje, dedicación y un profundo sentido de empatía y apoyo hacia los demás."</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        </article>
                     </div>
+
+                    <div class="carousel-item">
+
+                        <article class="container text-center">
+                            <img class="rounded-5" height="250" src="assets/caloncho.jpeg" alt="persona4">
+                            <h3 class="my-3">Caloncho (mi perro) </h3>
+                            <p> "Es notable cómo Mariana combina sus estudios y pasatiempos con proyectos relevantes y significativos."</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        </article>
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <article class="container text-center">
+                            <img class="rounded-5" height="250" src="assets/profesores.jpeg" alt="persona5">
+                            <h3 class="my-3">Profesores</h3>
+                            <p> "Es una persona dedicada, apasionada y con un futuro brillante por delante. Su habilidad para equilibrar sus intereses técnicos y sociales."</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        </article>
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <article class="container text-center">
+                            <img class="rounded-5" height="250" src="assets/sunghoon.jpeg" alt="persona5">
+                            <h3 class="my-3">Park Sung Hoon</h3>
+                            <p> "Una persona verdaderamente excepcional y apasionada por su crecimiento personal y profesional. Actualmente, está cursando una doble carrera en Ingeniería en Sistemas Computacionales y Trabajo Social, lo que refleja su profundo compromiso tanto con la tecnología como con la mejora del bienestar social."</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        </article>
+                    </div>
+
+
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -295,6 +318,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+        
 </body>
 
 </html>
