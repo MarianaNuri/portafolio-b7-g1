@@ -19,7 +19,7 @@
 
     <!-- Cabecera de mi página -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
+        <nav class="navbar fixed-top navbar-expand-lg bg-black" data-bs-theme="dark">
             <div class="container"> <!--  -fluid = para que se extienda por toda la pagina -->
                 <a class="navbar-brand text-white" href="#">Mariana</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -50,7 +50,7 @@
     </header>
 
 
-    <main>
+    <main class="pb-5">
         <section id="presentacion">
 <!-- Abri un div y meti la clase (class="container...") que estaba en la seccion (justo a lado del ID="presentacion" en ese div para que la imagen se pusiera en toda la pantalla  -->
             <div class="container col-xxl-8 px-4 py-5  d-flex justify-content-start align-items-center">
@@ -60,9 +60,9 @@
 
                     <!-- text-body-emphasis en lugar de text-white -->
 
-                    <h1 class="display-5 fw-bold  text-white lh-1 mb-3">Mariana Chávez Nuricumbo
+                    <h1 class=" display-5 fw-bold  text-white lh-1 mb-3 text-shadow-1">Mariana Chávez Nuricumbo
                     </h1>
-                    <p class="lead">Soy estudiante de Ingeniería en Sistemas Computacionales y Trabajo Social,
+                    <p class="lead text-white">Soy estudiante de Ingeniería en Sistemas Computacionales y Trabajo Social,
                         apasionada por la tecnología y el cambio social. Amante de los animales, la música (k-pop) y el dibujo,
                         busco fusionar mis conocimientos para crear un impacto positivo en la sociedad.
                     </p>
@@ -136,7 +136,7 @@
             </div>
         </section>
 
-        <section id="proyectos" class="container px-4 py-5">
+        <section id="proyectos" class="container px-4 py-5 mb-6">
             <h2 class="pb-2 border-bottom">Proyectos</h2>
 
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
@@ -217,6 +217,8 @@
         </section>
 
         <section id="testimonios">
+            <h2 class="text-center my-6">Testimonios </h2>
+            
             <div id="myCarousel" class="carousel slide mb-6 carousel-dark carousel-fade " data-bs-theme="dark"
                 data-bs-ride="carousel">
 
@@ -297,21 +299,53 @@
 
     </main>
 
-    <footer id="contacto" class="py-3 my-4">
+    <footer id="contacto" class="bg-black py-3 my-4 mt-5 ">
+
+        <h1 class="mt-5 my-4 text-center">
+            <i class="bi bi-chat-square-heart-fill text-white "></i>
+        </h1>
+
+
+
+        <h4 class=" text-white text-center"> "Don’t you ever tell yourself that you’re not enough" </h4>
+        <h6 class="text-white text-center mb-5"> <i>Youtiful</i>- Stray Kids</h6>
+
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            
+            <li class="nav-item fs-1 ">
+                <a href="https://github.com/MarianaNuri" target="_blank" class="nav-link px-5 text-body-secondary">
+                <i class="bi bi-github text-white" ></i>
+            </a>
+        </li>
+
+
+        
+            <li class="nav-item fs-1">
+                <a href="https://www.instagram.com/mari_.chvz/" target="_blank" class="nav-link px-5 text-body-secondary">
+                <i class="bi bi-instagram text-white" ></i>
+            </a>
+        </li>
+
+        <li class="nav-item fs-1">
+            <a href="https://x.com/mari_xaana" target="_blank" class="nav-link px-5 text-body-secondary">
+            <i class="bi bi-twitter-x text-white" ></i>
+        </a>
+    </li>
+
+
+    
+        <li class="nav-item fs-1">
+            <a href="https://www.linkedin.com/in/mariana-chávez-nuricumbo-1ab572318/" target="_blank" class="nav-link px-5 text-body-secondary">
+            <i class="bi bi-linkedin text-white " ></i>
+        </a>
+    </li>
+
+
+
+    
         </ul>
-        <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+        <p class="text-center text-dark-emphasis">© 2024 Mariana, TECNOLOCHICAS PRO</p>
     </footer>
-
-
-
-
-
 
 
 
